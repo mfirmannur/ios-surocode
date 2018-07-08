@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840A3B3D20F2071700B32D5B /* Updates.storyboard */; };
+		840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */; };
+		840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */; };
 		E449F63A20F1EB0800C67C0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449F63920F1EB0800C67C0E /* AppDelegate.swift */; };
 		E449F64220F1EB0800C67C0E /* iqro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E449F64020F1EB0800C67C0E /* iqro.xcdatamodeld */; };
 		E449F64420F1EB0800C67C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E449F64320F1EB0800C67C0E /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840A3B3E20F2071700B32D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iqro/Base.lproj/Updates.storyboard; sourceTree = SOURCE_ROOT; };
+		840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
+		840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesTableViewCell.swift; sourceTree = "<group>"; };
 		E449F63620F1EB0800C67C0E /* iqro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iqro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E449F63920F1EB0800C67C0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E449F64120F1EB0800C67C0E /* iqro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iqro.xcdatamodel; sourceTree = "<group>"; };
@@ -58,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840A3B4220F20EDF00B32D5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				840A3B4320F20EEE00B32D5B /* UpdateTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		840A3B4320F20EEE00B32D5B /* UpdateTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */,
+			);
+			path = UpdateTableViewCell;
+			sourceTree = "<group>";
+		};
 		E449F62D20F1EB0800C67C0E = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +101,7 @@
 		E449F63820F1EB0800C67C0E /* iqro */ = {
 			isa = PBXGroup;
 			children = (
+				840A3B4220F20EDF00B32D5B /* Views */,
 				E44A61FD20F2016500F71F6B /* Storyboard */,
 				E44A61FA20F200F500F71F6B /* ViewController */,
 				E449F63920F1EB0800C67C0E /* AppDelegate.swift */,
@@ -103,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E44A61FB20F2013000F71F6B /* HomeViewController.swift */,
+				840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -111,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E44A620020F202F400F71F6B /* Home.storyboard */,
+				840A3B3D20F2071700B32D5B /* Updates.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -201,6 +226,7 @@
 				E449F64720F1EB0800C67C0E /* LaunchScreen.storyboard in Resources */,
 				E449F64420F1EB0800C67C0E /* Assets.xcassets in Resources */,
 				E44A620220F202F400F71F6B /* Home.storyboard in Resources */,
+				840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +247,8 @@
 				E449F63A20F1EB0800C67C0E /* AppDelegate.swift in Sources */,
 				E449F64220F1EB0800C67C0E /* iqro.xcdatamodeld in Sources */,
 				E44A61FC20F2013000F71F6B /* HomeViewController.swift in Sources */,
+				840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */,
+				840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +271,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		840A3B3D20F2071700B32D5B /* Updates.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840A3B3E20F2071700B32D5B /* Base */,
+			);
+			name = Updates.storyboard;
+			sourceTree = "<group>";
+		};
 		E449F64520F1EB0800C67C0E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
