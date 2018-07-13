@@ -1,0 +1,6 @@
+framework module Pods_iqro {
+  umbrella header "Pods-iqro-umbrella.h"
+
+  export *
+  module * { export * }
+}
