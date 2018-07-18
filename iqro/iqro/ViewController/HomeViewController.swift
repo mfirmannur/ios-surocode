@@ -10,11 +10,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBAction func goToUdpatePage(_ sender: Any) {
-        let updateStoryBoard = UIStoryboard(name: "Updates", bundle: nil)
-        let updatesViewController = updateStoryBoard.instantiateViewController(withIdentifier: "UpdatesViewController")
-        navigationController?.pushViewController(updatesViewController, animated: true)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

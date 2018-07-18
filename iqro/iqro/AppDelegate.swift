@@ -13,11 +13,31 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tabBarController:UITabBarController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupTabBarController()
         return true
+    }
+    
+    func setupTabBarController() {
+        tabBarController = UITabBarController()
+        
+        let homeStoryBoard = UIStoryboard(name: "Home", bundle: nil)
+        let homeViewController = homeStoryBoard.instantiateViewController(withIdentifier: "HomeViewController")
+        let homeNavigationController = UINavigationController(rootViewController: homeViewController)
+        homeNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        
+        let updatesStoryBoard = UIStoryboard(name: "Updates", bundle: nil)
+        let updatesViewController = updatesStoryBoard.instantiateViewController(withIdentifier: "UpdatesViewController")
+        let updatesNavigationController = UINavigationController(rootViewController: updatesViewController)
+        updatesNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        
+        let controllers = [homeNavigationController, updatesNavigationController]
+        tabBarController?.viewControllers = controllers
+        window?.rootViewController = tabBarController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
