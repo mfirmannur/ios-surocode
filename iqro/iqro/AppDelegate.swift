@@ -28,16 +28,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeStoryBoard = UIStoryboard(name: "Home", bundle: nil)
         let homeViewController = homeStoryBoard.instantiateViewController(withIdentifier: "HomeViewController")
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
-        homeNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), selectedImage: UIImage(named: ""))
+        
+        let donateStoryBoard = UIStoryboard(name: "Donate", bundle: nil)
+        let donateViewController = donateStoryBoard.instantiateViewController(withIdentifier:"DonateViewController")
+        let donateNavigationController = UINavigationController(rootViewController: donateViewController)
+        donateNavigationController.tabBarItem = UITabBarItem(title: "Donate", image: UIImage(named: "ic_donate"), selectedImage: UIImage(named: ""))
         
         let updatesStoryBoard = UIStoryboard(name: "Updates", bundle: nil)
         let updatesViewController = updatesStoryBoard.instantiateViewController(withIdentifier: "UpdatesViewController")
         let updatesNavigationController = UINavigationController(rootViewController: updatesViewController)
-        updatesNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        updatesNavigationController.tabBarItem = UITabBarItem(title: "Updates", image: UIImage(named: "ic_updates"), selectedImage: UIImage(named: ""))
         
-        let controllers = [homeNavigationController, updatesNavigationController]
+        let buildingStoryBoard = UIStoryboard(name: "Building", bundle: nil)
+        let buildingViewController = buildingStoryBoard.instantiateViewController(withIdentifier: "BuildingViewController")
+        let buildingNavigationController = UINavigationController(rootViewController: buildingViewController)
+        buildingNavigationController.tabBarItem = UITabBarItem(title: "Building", image: UIImage(named: "ic_build"), selectedImage: UIImage(named: ""))
+        
+        UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().tintColor = UIColor.green
+        
+        let controllers = [homeNavigationController, donateNavigationController, updatesNavigationController, buildingNavigationController]
         tabBarController?.viewControllers = controllers
         window?.rootViewController = tabBarController
+        
+        for tabBarItem in (tabBarController?.tabBar.items)! {
+            tabBarItem.imageInsets = UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 0)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

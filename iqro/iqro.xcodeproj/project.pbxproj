@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		2F36889FEC9E60E5748D2922 /* Pods_iqro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8143D28379CE79E4E55843 /* Pods_iqro.framework */; };
 		5FC44431479458FDFF0BA69C /* Pods_iqroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D03722168E92D84DE70961 /* Pods_iqroTests.framework */; };
+		65B77B93211BE49300F278BB /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B77B92211BE49300F278BB /* Donate.storyboard */; };
+		65B77B95211BE52800F278BB /* Building.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B77B94211BE52800F278BB /* Building.storyboard */; };
+		65B77B9B211BE66600F278BB /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77B9A211BE66600F278BB /* BuildingViewController.swift */; };
+		65B77B9D211BE68800F278BB /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77B9C211BE68800F278BB /* DonateViewController.swift */; };
+		65B77BA2211C01DC00F278BB /* DonateOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77BA0211C01DC00F278BB /* DonateOptionsCell.swift */; };
+		65B77BA3211C01DC00F278BB /* DonateOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */; };
+		65B77BA8211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */; };
+		65B77BA9211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */; };
 		840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840A3B3D20F2071700B32D5B /* Updates.storyboard */; };
 		840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */; };
 		840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */; };
@@ -32,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65B77B92211BE49300F278BB /* Donate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
+		65B77B94211BE52800F278BB /* Building.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Building.storyboard; sourceTree = "<group>"; };
+		65B77B9A211BE66600F278BB /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
+		65B77B9C211BE68800F278BB /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		65B77BA0211C01DC00F278BB /* DonateOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateOptionsCell.swift; sourceTree = "<group>"; };
+		65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateOptionsCell.xib; sourceTree = "<group>"; };
+		65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateOptionsItemCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateOptionsItemCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		6A8143D28379CE79E4E55843 /* Pods_iqro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iqro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840A3B3E20F2071700B32D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iqro/Base.lproj/Updates.storyboard; sourceTree = SOURCE_ROOT; };
 		840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +110,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		65B77B9F211C018B00F278BB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				65B77BA5211C026600F278BB /* DonateOptionsItemCell */,
+				65B77BA4211C01EB00F278BB /* DonateOptionsCell */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		65B77BA4211C01EB00F278BB /* DonateOptionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				65B77BA0211C01DC00F278BB /* DonateOptionsCell.swift */,
+				65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */,
+			);
+			path = DonateOptionsCell;
+			sourceTree = "<group>";
+		};
+		65B77BA5211C026600F278BB /* DonateOptionsItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */,
+				65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */,
+			);
+			path = DonateOptionsItemCell;
+			sourceTree = "<group>";
+		};
 		840A3B4220F20EDF00B32D5B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +176,7 @@
 		E449F63820F1EB0800C67C0E /* iqro */ = {
 			isa = PBXGroup;
 			children = (
+				65B77B9F211C018B00F278BB /* Widgets */,
 				840A3B4220F20EDF00B32D5B /* Views */,
 				E48039BA20F20D5100BD9634 /* Storyboard */,
 				E44A61FA20F200F500F71F6B /* ViewController */,
@@ -159,6 +203,8 @@
 			children = (
 				E44A61FB20F2013000F71F6B /* HomeViewController.swift */,
 				840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */,
+				65B77B9A211BE66600F278BB /* BuildingViewController.swift */,
+				65B77B9C211BE68800F278BB /* DonateViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -168,6 +214,8 @@
 			children = (
 				840A3B3D20F2071700B32D5B /* Updates.storyboard */,
 				E48039BB20F20D6E00BD9634 /* Home.storyboard */,
+				65B77B92211BE49300F278BB /* Donate.storyboard */,
+				65B77B94211BE52800F278BB /* Building.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -184,7 +232,6 @@
 				E449F63320F1EB0800C67C0E /* Frameworks */,
 				E449F63420F1EB0800C67C0E /* Resources */,
 				7F59F438780D86B1430BE213 /* [CP] Embed Pods Frameworks */,
-				52D52AF4B4C18597678EBBEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,8 +250,6 @@
 				E449F64920F1EB0800C67C0E /* Sources */,
 				E449F64A20F1EB0800C67C0E /* Frameworks */,
 				E449F64B20F1EB0800C67C0E /* Resources */,
-				EF95B8D4821D0D4D28BADD3A /* [CP] Embed Pods Frameworks */,
-				3AE50507491714207C1B7AFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,7 +268,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = MyMacbook;
 				TargetAttributes = {
 					E449F63520F1EB0800C67C0E = {
@@ -261,8 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B77B95211BE52800F278BB /* Building.storyboard in Resources */,
+				65B77BA9211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib in Resources */,
 				E48039BD20F20D6E00BD9634 /* Home.storyboard in Resources */,
 				E449F64720F1EB0800C67C0E /* LaunchScreen.storyboard in Resources */,
+				65B77B93211BE49300F278BB /* Donate.storyboard in Resources */,
+				65B77BA3211C01DC00F278BB /* DonateOptionsCell.xib in Resources */,
 				E449F64420F1EB0800C67C0E /* Assets.xcassets in Resources */,
 				840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */,
 			);
@@ -294,36 +343,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3AE50507491714207C1B7AFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iqroTests/Pods-iqroTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		52D52AF4B4C18597678EBBEE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iqro/Pods-iqro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7F59F438780D86B1430BE213 /* [CP] Embed Pods Frameworks */ = {
@@ -362,21 +381,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF95B8D4821D0D4D28BADD3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iqroTests/Pods-iqroTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -384,6 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B77B9B211BE66600F278BB /* BuildingViewController.swift in Sources */,
+				65B77BA2211C01DC00F278BB /* DonateOptionsCell.swift in Sources */,
+				65B77BA8211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift in Sources */,
+				65B77B9D211BE68800F278BB /* DonateViewController.swift in Sources */,
 				E449F63A20F1EB0800C67C0E /* AppDelegate.swift in Sources */,
 				E449F64220F1EB0800C67C0E /* iqro.xcdatamodeld in Sources */,
 				E44A61FC20F2013000F71F6B /* HomeViewController.swift in Sources */,
@@ -452,6 +460,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -459,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -509,6 +519,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -516,6 +527,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
