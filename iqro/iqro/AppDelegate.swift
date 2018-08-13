@@ -40,15 +40,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let updatesNavigationController = UINavigationController(rootViewController: updatesViewController)
         updatesNavigationController.tabBarItem = UITabBarItem(title: "Updates", image: UIImage(named: "ic_updates"), selectedImage: UIImage(named: ""))
         
-        let buildingStoryBoard = UIStoryboard(name: "Building", bundle: nil)
-        let buildingViewController = buildingStoryBoard.instantiateViewController(withIdentifier: "BuildingViewController")
-        let buildingNavigationController = UINavigationController(rootViewController: buildingViewController)
-        buildingNavigationController.tabBarItem = UITabBarItem(title: "Building", image: UIImage(named: "ic_build"), selectedImage: UIImage(named: ""))
+        let bookingStoryBoard = UIStoryboard(name: "Booking", bundle: nil)
+        let bookingViewController = bookingStoryBoard.instantiateViewController(withIdentifier: "BookingViewController")
+        let bookingNavigationController = UINavigationController(rootViewController: bookingViewController)
+        bookingNavigationController.tabBarItem = UITabBarItem(title: "Booking", image: UIImage(named: "ic_build"), selectedImage: UIImage(named: ""))
         
         UITabBar.appearance().barTintColor = UIColor.white
         UITabBar.appearance().tintColor = UIColor.green
         
-        let controllers = [homeNavigationController, donateNavigationController, updatesNavigationController, buildingNavigationController]
+        let controllers = [homeNavigationController, donateNavigationController, updatesNavigationController, bookingNavigationController]
         tabBarController?.viewControllers = controllers
         window?.rootViewController = tabBarController
         

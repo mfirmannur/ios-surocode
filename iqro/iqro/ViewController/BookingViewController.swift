@@ -1,5 +1,5 @@
 //
-//  BuildingViewController.swift
+//  BookingViewController.swift
 //  iqro
 //
 //  Created by M Hafidh Abdul Aziz on 09/08/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BuildingViewController: UIViewController {
+class BookingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
