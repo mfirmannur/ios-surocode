@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2F36889FEC9E60E5748D2922 /* Pods_iqro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8143D28379CE79E4E55843 /* Pods_iqro.framework */; };
 		5FC44431479458FDFF0BA69C /* Pods_iqroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D03722168E92D84DE70961 /* Pods_iqroTests.framework */; };
+		65B6C69C21217822002D2177 /* DonateTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6C69A21217822002D2177 /* DonateTitleTableViewCell.swift */; };
+		65B6C69D21217822002D2177 /* DonateTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B6C69B21217822002D2177 /* DonateTitleTableViewCell.xib */; };
+		65B6C6A3212182A3002D2177 /* DonateFooterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6C6A1212182A3002D2177 /* DonateFooterViewCell.swift */; };
+		65B6C6A4212182A3002D2177 /* DonateFooterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B6C6A2212182A3002D2177 /* DonateFooterViewCell.xib */; };
 		65B77B93211BE49300F278BB /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B77B92211BE49300F278BB /* Donate.storyboard */; };
 		65B77B95211BE52800F278BB /* Booking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B77B94211BE52800F278BB /* Booking.storyboard */; };
 		65B77B9B211BE66600F278BB /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77B9A211BE66600F278BB /* BookingViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65B6C69A21217822002D2177 /* DonateTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateTitleTableViewCell.swift; sourceTree = "<group>"; };
+		65B6C69B21217822002D2177 /* DonateTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateTitleTableViewCell.xib; sourceTree = "<group>"; };
+		65B6C6A1212182A3002D2177 /* DonateFooterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateFooterViewCell.swift; sourceTree = "<group>"; };
+		65B6C6A2212182A3002D2177 /* DonateFooterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateFooterViewCell.xib; sourceTree = "<group>"; };
 		65B77B92211BE49300F278BB /* Donate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
 		65B77B94211BE52800F278BB /* Booking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Booking.storyboard; sourceTree = "<group>"; };
 		65B77B9A211BE66600F278BB /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
@@ -110,13 +118,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		65B77B9F211C018B00F278BB /* Widgets */ = {
+		65B6C699212177E1002D2177 /* DonateTitleViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				65B6C69A21217822002D2177 /* DonateTitleTableViewCell.swift */,
+				65B6C69B21217822002D2177 /* DonateTitleTableViewCell.xib */,
+			);
+			path = DonateTitleViewCell;
+			sourceTree = "<group>";
+		};
+		65B6C69E21218204002D2177 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				65B6C6A02121822E002D2177 /* DonateFooterInfoViewCell */,
+				65B6C699212177E1002D2177 /* DonateTitleViewCell */,
 				65B77BA5211C026600F278BB /* DonateOptionsItemCell */,
 				65B77BA4211C01EB00F278BB /* DonateOptionsCell */,
 			);
-			path = Widgets;
+			path = Donate;
+			sourceTree = "<group>";
+		};
+		65B6C69F2121821E002D2177 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				840A3B4320F20EEE00B32D5B /* UpdatesTableViewCell */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		65B6C6A02121822E002D2177 /* DonateFooterInfoViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				65B6C6A1212182A3002D2177 /* DonateFooterViewCell.swift */,
+				65B6C6A2212182A3002D2177 /* DonateFooterViewCell.xib */,
+			);
+			path = DonateFooterInfoViewCell;
 			sourceTree = "<group>";
 		};
 		65B77BA4211C01EB00F278BB /* DonateOptionsCell */ = {
@@ -140,17 +176,18 @@
 		840A3B4220F20EDF00B32D5B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				840A3B4320F20EEE00B32D5B /* UpdateTableViewCell */,
+				65B6C69F2121821E002D2177 /* Updates */,
+				65B6C69E21218204002D2177 /* Donate */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		840A3B4320F20EEE00B32D5B /* UpdateTableViewCell */ = {
+		840A3B4320F20EEE00B32D5B /* UpdatesTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */,
 			);
-			path = UpdateTableViewCell;
+			path = UpdatesTableViewCell;
 			sourceTree = "<group>";
 		};
 		E449F62D20F1EB0800C67C0E = {
@@ -176,7 +213,6 @@
 		E449F63820F1EB0800C67C0E /* iqro */ = {
 			isa = PBXGroup;
 			children = (
-				65B77B9F211C018B00F278BB /* Widgets */,
 				840A3B4220F20EDF00B32D5B /* Views */,
 				E48039BA20F20D5100BD9634 /* Storyboard */,
 				E44A61FA20F200F500F71F6B /* ViewController */,
@@ -306,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6C6A4212182A3002D2177 /* DonateFooterViewCell.xib in Resources */,
 				65B77B95211BE52800F278BB /* Booking.storyboard in Resources */,
 				65B77BA9211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib in Resources */,
 				E48039BD20F20D6E00BD9634 /* Home.storyboard in Resources */,
@@ -313,6 +350,7 @@
 				65B77B93211BE49300F278BB /* Donate.storyboard in Resources */,
 				65B77BA3211C01DC00F278BB /* DonateOptionsCell.xib in Resources */,
 				E449F64420F1EB0800C67C0E /* Assets.xcassets in Resources */,
+				65B6C69D21217822002D2177 /* DonateTitleTableViewCell.xib in Resources */,
 				840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +431,9 @@
 				65B77BA8211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift in Sources */,
 				65B77B9D211BE68800F278BB /* DonateViewController.swift in Sources */,
 				E449F63A20F1EB0800C67C0E /* AppDelegate.swift in Sources */,
+				65B6C69C21217822002D2177 /* DonateTitleTableViewCell.swift in Sources */,
 				E449F64220F1EB0800C67C0E /* iqro.xcdatamodeld in Sources */,
+				65B6C6A3212182A3002D2177 /* DonateFooterViewCell.swift in Sources */,
 				E44A61FC20F2013000F71F6B /* HomeViewController.swift in Sources */,
 				840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */,
 				840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */,
