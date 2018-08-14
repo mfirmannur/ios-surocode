@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="282.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-6F-3jt">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ycs-6F-3jt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="282.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TK7-VU-ehF">
@@ -31,14 +31,15 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ycs-6F-3jt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ACj-5p-Xcb"/>
-                    <constraint firstItem="ycs-6F-3jt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UkG-2R-BQ8"/>
-                    <constraint firstAttribute="bottom" secondItem="ycs-6F-3jt" secondAttribute="bottom" id="gr1-Ac-QWV"/>
-                    <constraint firstAttribute="trailing" secondItem="ycs-6F-3jt" secondAttribute="trailing" id="u48-an-Wu7"/>
+                    <constraint firstAttribute="trailing" secondItem="ycs-6F-3jt" secondAttribute="trailing" id="BUG-l2-Opx"/>
+                    <constraint firstAttribute="bottom" secondItem="ycs-6F-3jt" secondAttribute="bottom" id="EuV-2d-Opp"/>
+                    <constraint firstItem="ycs-6F-3jt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uo5-aZ-hQq"/>
+                    <constraint firstItem="ycs-6F-3jt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xus-BQ-lPO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="donateContentView" destination="H2p-sc-9uM" id="rQQ-Rg-ZiA"/>
                 <outlet property="donateOptionCollection" destination="ycs-6F-3jt" id="n83-77-rcL"/>
             </connections>
             <point key="canvasLocation" x="35" y="24.5"/>

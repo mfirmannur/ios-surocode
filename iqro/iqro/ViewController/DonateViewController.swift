@@ -17,24 +17,10 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.donateTableView.delegate = self
         self.donateTableView.dataSource = self
+        self.donateTableView.rowHeight = UITableViewAutomaticDimension
         // Do any additional setup after loading the view.
         
         registerCell()
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch donateViewSections[indexPath.section] {
-        case "Donate Title Section":
-            return 50
-        case "Donate Option Collection":
-            return 650
-        case "Donate Footer 1":
-            return 200
-        case "Donate Footer 2":
-            return 150
-        default:
-            return 0
-        }
     }
     
     func registerCell(){
@@ -56,6 +42,15 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 4
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch donateViewSections[indexPath.section] {
+        case "Donate Option Collection":
+            return 620;
+        default:
+            return UITableViewAutomaticDimension
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:UITableViewCell?
         
@@ -70,12 +65,29 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell = tableView.dequeueReusableCell(withIdentifier: "DonateFooterViewCell", for: indexPath as IndexPath) as! DonateFooterViewCell
             (cell as! DonateFooterViewCell).donateFooterTitle.isHidden = false
             (cell as! DonateFooterViewCell).donateFooterTitleLabel.text = "Other ways to donate."
-            (cell as! DonateFooterViewCell).donateFooterContentLabel.text = "Bank Transfer (IQRO Foundation Fund)\n\nCommonwealth Bank of Australia\nAccount name: IQRO Foundation\nBSB: 062-475\nBIC/SWIFT:CTABAAU2S\nAccount no.: 10166179\nReference: Your_Name & Phone_Number"
+            (cell as! DonateFooterViewCell).donateFooterContentLabel.text = """
+            Bank Transfer (IQRO Foundation Fund)
+            
+            Commonwealth Bank of Australia
+            Account name: IQRO Foundation
+            BSB: 062-475
+            BIC/SWIFT:CTABAAU2S
+            Account no.: 10166179
+            Reference: Your_Name & Phone_Number
+            """
             return cell!
         case "Donate Footer 2":
             cell = tableView.dequeueReusableCell(withIdentifier: "DonateFooterViewCell", for: indexPath as IndexPath) as! DonateFooterViewCell
             (cell as! DonateFooterViewCell).donateFooterTitle.isHidden = true
-            (cell as! DonateFooterViewCell).donateFooterContentLabel.text = "IQRO CENTRE PERTH PROJECT\n\nAccount name: IQRO Australia New Zealand Ltd\nBSB: 066-162\nBIC/SWIFT: CTBAAU2S\nAccount no.: 10753348\nReference: Your_Name - IQRO DC"
+            (cell as! DonateFooterViewCell).donateFooterContentLabel.text = """
+            IQRO CENTRE PERTH PROJECT
+            
+            Account name: IQRO Australia New Zealand Ltd
+            BSB: 066-162
+            BIC/SWIFT: CTBAAU2S
+            Account no.: 10753348
+            Reference: Your_Name - IQRO DC
+            """
             return cell!
         default:
             return UITableViewCell()

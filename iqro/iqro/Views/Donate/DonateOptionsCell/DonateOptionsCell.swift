@@ -10,6 +10,7 @@ import UIKit
 
 class DonateOptionsCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
 
+    @IBOutlet weak var donateContentView: UIView!
     @IBOutlet weak var donateOptionCollection: UICollectionView!
     
     let donateItemSections = ["Center Perth","Masjid Iqro","Foundation","Infaq","Emergency"]
