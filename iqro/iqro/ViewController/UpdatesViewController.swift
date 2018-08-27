@@ -9,6 +9,19 @@
 import UIKit
 
 class UpdatesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var updatesTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -17,19 +30,6 @@ class UpdatesViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UpdatesTableViewCell") as! UpdatesTableViewCell
         return cell
-    }
-    
-    @IBOutlet weak var updatesTableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

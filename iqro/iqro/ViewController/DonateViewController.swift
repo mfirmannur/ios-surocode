@@ -20,6 +20,7 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.donateTableView.rowHeight = UITableViewAutomaticDimension
         // Do any additional setup after loading the view.
         
+        self.navigationController?.navigationBar.isHidden = true
         registerCell()
     }
     
@@ -39,7 +40,7 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return donateViewSections.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

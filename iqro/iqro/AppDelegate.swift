@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         setupTabBarController()
+        UIApplication.shared.statusBarStyle = .lightContent
+        let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView
+        statusBar?.backgroundColor = UIColor(hexString: "#ffffff")
         return true
     }
     
@@ -45,15 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bookingNavigationController = UINavigationController(rootViewController: bookingViewController)
         bookingNavigationController.tabBarItem = UITabBarItem(title: "Booking", image: UIImage(named: "ic_build"), selectedImage: UIImage(named: ""))
         
-        UITabBar.appearance().barTintColor = UIColor.white
-        UITabBar.appearance().tintColor = UIColor.green
+        UITabBar.appearance().barTintColor = UIColor(hexString: "#ffffff")
+        UITabBar.appearance().tintColor = UIColor(hexString: "#01C770")
         
         let controllers = [homeNavigationController, donateNavigationController, updatesNavigationController, bookingNavigationController]
         tabBarController?.viewControllers = controllers
         window?.rootViewController = tabBarController
         
+        // adjust tabbar item
         for tabBarItem in (tabBarController?.tabBar.items)! {
-            tabBarItem.imageInsets = UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 0)
+            tabBarItem.imageInsets = UIEdgeInsets(top: 2, left: 0, bottom: 4, right: 0)
+            tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -4)
         }
     }
 
