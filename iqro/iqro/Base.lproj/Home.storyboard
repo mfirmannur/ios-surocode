@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRh-sq-2Yr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRh-sq-2Yr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,75 +38,75 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmi-64-Mze">
-                                        <rect key="frame" x="0.0" y="144" width="375" height="232"/>
+                                        <rect key="frame" x="0.0" y="136" width="375" height="224"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_front_building" translatesAutoresizingMaskIntoConstraints="NO" id="MNn-fg-sES">
-                                                <rect key="frame" x="8" y="8" width="172.5" height="100"/>
+                                                <rect key="frame" x="8" y="8" width="175.5" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="SsV-Js-MZS"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_front_building" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-O8-gm9">
-                                                <rect key="frame" x="8" y="120" width="172.5" height="100"/>
+                                                <rect key="frame" x="8" y="116" width="175.5" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="jyI-Bp-xqI"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_front_building" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Pu-709">
-                                                <rect key="frame" x="194.5" y="120" width="172.5" height="100"/>
+                                                <rect key="frame" x="191.5" y="116" width="175.5" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="3ND-4c-wnj"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_front_building" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Vi-c8r">
-                                                <rect key="frame" x="194.5" y="8" width="172.5" height="100"/>
+                                                <rect key="frame" x="191.5" y="8" width="175.5" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="myz-Zy-PZH"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="MNn-fg-sES" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-15" id="1rU-T9-Lr2"/>
-                                            <constraint firstItem="yb1-Pu-709" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-15" id="2sZ-Pb-UNF"/>
+                                            <constraint firstItem="MNn-fg-sES" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-12" id="1rU-T9-Lr2"/>
+                                            <constraint firstItem="yb1-Pu-709" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-12" id="2sZ-Pb-UNF"/>
                                             <constraint firstAttribute="trailing" secondItem="am8-Vi-c8r" secondAttribute="trailing" constant="8" id="9rv-wN-jIy"/>
                                             <constraint firstAttribute="trailing" secondItem="yb1-Pu-709" secondAttribute="trailing" constant="8" id="ABN-DU-8ft"/>
                                             <constraint firstItem="2ax-O8-gm9" firstAttribute="leading" secondItem="Jmi-64-Mze" secondAttribute="leading" constant="8" id="BUn-Hu-hW7"/>
-                                            <constraint firstItem="2ax-O8-gm9" firstAttribute="top" secondItem="MNn-fg-sES" secondAttribute="bottom" constant="12" id="IEe-Am-W48"/>
-                                            <constraint firstAttribute="bottom" secondItem="2ax-O8-gm9" secondAttribute="bottom" constant="12" id="Jfx-Z6-jyW"/>
+                                            <constraint firstItem="2ax-O8-gm9" firstAttribute="top" secondItem="MNn-fg-sES" secondAttribute="bottom" constant="8" id="IEe-Am-W48"/>
+                                            <constraint firstAttribute="bottom" secondItem="2ax-O8-gm9" secondAttribute="bottom" constant="8" id="Jfx-Z6-jyW"/>
                                             <constraint firstItem="MNn-fg-sES" firstAttribute="top" secondItem="Jmi-64-Mze" secondAttribute="top" constant="8" id="Myw-1K-J4g"/>
                                             <constraint firstItem="MNn-fg-sES" firstAttribute="leading" secondItem="Jmi-64-Mze" secondAttribute="leading" constant="8" id="Ttc-qi-wrx"/>
-                                            <constraint firstItem="2ax-O8-gm9" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-15" id="b0n-W7-Wh9"/>
-                                            <constraint firstItem="am8-Vi-c8r" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-15" id="iW8-v0-wdm"/>
-                                            <constraint firstItem="yb1-Pu-709" firstAttribute="top" secondItem="am8-Vi-c8r" secondAttribute="bottom" constant="12" id="lH5-p5-gdE"/>
-                                            <constraint firstAttribute="height" constant="232" id="lYt-bx-inA"/>
-                                            <constraint firstAttribute="bottom" secondItem="yb1-Pu-709" secondAttribute="bottom" constant="12" id="pB2-fB-nhA"/>
+                                            <constraint firstItem="2ax-O8-gm9" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-12" id="b0n-W7-Wh9"/>
+                                            <constraint firstItem="am8-Vi-c8r" firstAttribute="width" secondItem="Jmi-64-Mze" secondAttribute="width" multiplier="1:2" constant="-12" id="iW8-v0-wdm"/>
+                                            <constraint firstItem="yb1-Pu-709" firstAttribute="top" secondItem="am8-Vi-c8r" secondAttribute="bottom" constant="8" id="lH5-p5-gdE"/>
+                                            <constraint firstAttribute="height" constant="224" id="lYt-bx-inA"/>
+                                            <constraint firstAttribute="bottom" secondItem="yb1-Pu-709" secondAttribute="bottom" constant="8" id="pB2-fB-nhA"/>
                                             <constraint firstItem="am8-Vi-c8r" firstAttribute="top" secondItem="Jmi-64-Mze" secondAttribute="top" constant="8" id="t7K-zO-nED"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze7-vU-0QP">
-                                        <rect key="frame" x="0.0" y="376" width="375" height="220"/>
+                                        <rect key="frame" x="0.0" y="360" width="375" height="190"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb_page" translatesAutoresizingMaskIntoConstraints="NO" id="Em0-Dz-5XN">
-                                                <rect key="frame" x="8" y="0.0" width="172.5" height="220"/>
+                                                <rect key="frame" x="8" y="0.0" width="175.5" height="190"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb_checkin" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-pn-BFt">
-                                                <rect key="frame" x="194.5" y="0.0" width="172.5" height="220"/>
+                                                <rect key="frame" x="191.5" y="0.0" width="175.5" height="190"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="d4E-pn-BFt" secondAttribute="bottom" id="1pQ-WO-9vX"/>
                                             <constraint firstItem="Em0-Dz-5XN" firstAttribute="leading" secondItem="Ze7-vU-0QP" secondAttribute="leading" constant="8" id="2ID-cv-4SN"/>
-                                            <constraint firstItem="d4E-pn-BFt" firstAttribute="width" secondItem="Ze7-vU-0QP" secondAttribute="width" multiplier="1:2" constant="-15" id="L3m-69-WqO"/>
-                                            <constraint firstAttribute="height" constant="220" id="TXh-At-gK8"/>
+                                            <constraint firstAttribute="width" secondItem="Ze7-vU-0QP" secondAttribute="height" multiplier="75:38" id="4M2-oi-Zoo"/>
+                                            <constraint firstItem="d4E-pn-BFt" firstAttribute="width" secondItem="Ze7-vU-0QP" secondAttribute="width" multiplier="1:2" constant="-12" id="L3m-69-WqO"/>
                                             <constraint firstAttribute="trailing" secondItem="d4E-pn-BFt" secondAttribute="trailing" constant="8" id="VfA-YC-McK"/>
                                             <constraint firstItem="d4E-pn-BFt" firstAttribute="top" secondItem="Ze7-vU-0QP" secondAttribute="top" id="Wi3-NL-PYU"/>
-                                            <constraint firstItem="Em0-Dz-5XN" firstAttribute="width" secondItem="Ze7-vU-0QP" secondAttribute="width" multiplier="1:2" constant="-15" id="YWG-ta-bgZ"/>
+                                            <constraint firstItem="Em0-Dz-5XN" firstAttribute="width" secondItem="Ze7-vU-0QP" secondAttribute="width" multiplier="1:2" constant="-12" id="YWG-ta-bgZ"/>
                                             <constraint firstItem="Em0-Dz-5XN" firstAttribute="top" secondItem="Ze7-vU-0QP" secondAttribute="top" id="k87-gA-cwN"/>
                                             <constraint firstAttribute="bottom" secondItem="Em0-Dz-5XN" secondAttribute="bottom" id="oEC-WS-yeI"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-Sb-SAr">
-                                        <rect key="frame" x="0.0" y="616" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="570" width="375" height="120"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTm-7u-wk3">
                                                 <rect key="frame" x="8" y="8" width="359" height="40"/>
@@ -146,8 +147,7 @@
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.91372549020000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Jmi-64-Mze" firstAttribute="leading" secondItem="EVC-aF-re9" secondAttribute="leading" id="32P-g7-1rn"/>
-                                    <constraint firstItem="Jmi-64-Mze" firstAttribute="top" secondItem="8hw-zm-O5j" secondAttribute="bottom" constant="8" id="3IS-Wk-x9X"/>
-                                    <constraint firstItem="8hw-zm-O5j" firstAttribute="centerX" secondItem="EVC-aF-re9" secondAttribute="centerX" id="4n8-e4-GAi"/>
+                                    <constraint firstItem="Jmi-64-Mze" firstAttribute="top" secondItem="8hw-zm-O5j" secondAttribute="bottom" id="3IS-Wk-x9X"/>
                                     <constraint firstAttribute="bottom" secondItem="dXE-Sb-SAr" secondAttribute="bottom" id="8Ft-a8-ndH"/>
                                     <constraint firstAttribute="trailing" secondItem="dXE-Sb-SAr" secondAttribute="trailing" id="9lg-pd-JdZ"/>
                                     <constraint firstItem="Jmi-64-Mze" firstAttribute="leading" secondItem="Ze7-vU-0QP" secondAttribute="leading" id="Agf-jz-nOJ"/>
@@ -155,6 +155,7 @@
                                     <constraint firstItem="8hw-zm-O5j" firstAttribute="top" secondItem="EVC-aF-re9" secondAttribute="top" constant="8" id="TGa-6o-xoc"/>
                                     <constraint firstItem="dXE-Sb-SAr" firstAttribute="top" secondItem="Ze7-vU-0QP" secondAttribute="bottom" constant="20" id="bNf-Pc-VON"/>
                                     <constraint firstItem="Jmi-64-Mze" firstAttribute="trailing" secondItem="Ze7-vU-0QP" secondAttribute="trailing" id="ciD-ry-MM5"/>
+                                    <constraint firstItem="8hw-zm-O5j" firstAttribute="centerX" secondItem="EVC-aF-re9" secondAttribute="centerX" id="lCo-W2-GED"/>
                                     <constraint firstAttribute="trailing" secondItem="8hw-zm-O5j" secondAttribute="trailing" id="rYa-BN-Nir"/>
                                     <constraint firstAttribute="trailing" secondItem="Jmi-64-Mze" secondAttribute="trailing" id="sqm-BV-ARn"/>
                                     <constraint firstItem="8hw-zm-O5j" firstAttribute="leading" secondItem="EVC-aF-re9" secondAttribute="leading" id="w5N-DM-Szn"/>
