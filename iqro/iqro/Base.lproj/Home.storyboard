@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRh-sq-2Yr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRh-sq-2Yr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,13 +44,13 @@
                                                 <rect key="frame" x="8" y="4" width="175.5" height="106"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aboutus" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-uL-D3K">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="80"/>
+                                                        <rect key="frame" x="0.0" y="2" width="175.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="GNN-Vj-hhL"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1od-sN-Tu7">
-                                                        <rect key="frame" x="45.5" y="85" width="84.5" height="21"/>
+                                                        <rect key="frame" x="45.5" y="86" width="84.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -59,22 +61,22 @@
                                                     <constraint firstAttribute="height" constant="106" id="0xx-9C-sRV"/>
                                                     <constraint firstItem="1od-sN-Tu7" firstAttribute="centerX" secondItem="iJL-vb-f4q" secondAttribute="centerX" id="3Fd-oa-Q2j"/>
                                                     <constraint firstItem="i6H-uL-D3K" firstAttribute="leading" secondItem="iJL-vb-f4q" secondAttribute="leading" id="9mZ-QC-QAM"/>
-                                                    <constraint firstItem="1od-sN-Tu7" firstAttribute="top" secondItem="i6H-uL-D3K" secondAttribute="bottom" constant="5" id="hoa-wG-Vd0"/>
+                                                    <constraint firstItem="1od-sN-Tu7" firstAttribute="top" secondItem="i6H-uL-D3K" secondAttribute="bottom" constant="4" id="hoa-wG-Vd0"/>
                                                     <constraint firstAttribute="trailing" secondItem="i6H-uL-D3K" secondAttribute="trailing" id="qdb-ci-e9G"/>
-                                                    <constraint firstItem="i6H-uL-D3K" firstAttribute="top" secondItem="iJL-vb-f4q" secondAttribute="top" id="zh3-Oh-y8m"/>
+                                                    <constraint firstItem="i6H-uL-D3K" firstAttribute="top" secondItem="iJL-vb-f4q" secondAttribute="top" constant="2" id="zh3-Oh-y8m"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkf-Yt-8Fy">
                                                 <rect key="frame" x="8" y="114" width="175.5" height="106"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALLERY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-rg-B1H">
-                                                        <rect key="frame" x="51.5" y="81" width="73" height="21"/>
+                                                        <rect key="frame" x="51.5" y="86" width="73" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gallery" translatesAutoresizingMaskIntoConstraints="NO" id="Tpy-iw-8hd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="80"/>
+                                                        <rect key="frame" x="0.0" y="2" width="175.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="nJo-im-n6v"/>
                                                         </constraints>
@@ -85,8 +87,8 @@
                                                     <constraint firstAttribute="height" constant="106" id="EU1-WP-m4Q"/>
                                                     <constraint firstItem="Fah-rg-B1H" firstAttribute="centerX" secondItem="pkf-Yt-8Fy" secondAttribute="centerX" id="Ifa-Av-iqv"/>
                                                     <constraint firstItem="Tpy-iw-8hd" firstAttribute="leading" secondItem="pkf-Yt-8Fy" secondAttribute="leading" id="Sb3-ZY-3Lc"/>
-                                                    <constraint firstItem="Tpy-iw-8hd" firstAttribute="top" secondItem="pkf-Yt-8Fy" secondAttribute="top" id="Td4-ZW-u5R"/>
-                                                    <constraint firstItem="Fah-rg-B1H" firstAttribute="top" secondItem="Tpy-iw-8hd" secondAttribute="bottom" constant="1" id="amU-jn-P7O"/>
+                                                    <constraint firstItem="Tpy-iw-8hd" firstAttribute="top" secondItem="pkf-Yt-8Fy" secondAttribute="top" constant="2" id="Td4-ZW-u5R"/>
+                                                    <constraint firstItem="Fah-rg-B1H" firstAttribute="top" secondItem="Tpy-iw-8hd" secondAttribute="bottom" constant="4" id="amU-jn-P7O"/>
                                                     <constraint firstAttribute="trailing" secondItem="Tpy-iw-8hd" secondAttribute="trailing" id="rIG-Wr-ldz"/>
                                                 </constraints>
                                             </view>
@@ -94,13 +96,13 @@
                                                 <rect key="frame" x="191.5" y="114" width="175.5" height="106"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_contactus" translatesAutoresizingMaskIntoConstraints="NO" id="x10-zu-6x3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="80"/>
+                                                        <rect key="frame" x="0.0" y="2" width="175.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="s3p-vs-59h"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg1-uZ-dB3">
-                                                        <rect key="frame" x="35.5" y="81" width="105" height="21"/>
+                                                        <rect key="frame" x="35" y="86" width="105.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -110,9 +112,9 @@
                                                 <constraints>
                                                     <constraint firstItem="jg1-uZ-dB3" firstAttribute="centerX" secondItem="e5k-rn-f67" secondAttribute="centerX" id="70d-NK-yod"/>
                                                     <constraint firstItem="x10-zu-6x3" firstAttribute="leading" secondItem="e5k-rn-f67" secondAttribute="leading" id="AOP-eM-ZuF"/>
-                                                    <constraint firstItem="x10-zu-6x3" firstAttribute="top" secondItem="e5k-rn-f67" secondAttribute="top" id="Fd0-cy-YmU"/>
+                                                    <constraint firstItem="x10-zu-6x3" firstAttribute="top" secondItem="e5k-rn-f67" secondAttribute="top" constant="2" id="Fd0-cy-YmU"/>
                                                     <constraint firstAttribute="trailing" secondItem="x10-zu-6x3" secondAttribute="trailing" id="U9u-wf-Ted"/>
-                                                    <constraint firstItem="jg1-uZ-dB3" firstAttribute="top" secondItem="x10-zu-6x3" secondAttribute="bottom" constant="1" id="gMe-Ha-x4h"/>
+                                                    <constraint firstItem="jg1-uZ-dB3" firstAttribute="top" secondItem="x10-zu-6x3" secondAttribute="bottom" constant="4" id="gMe-Ha-x4h"/>
                                                     <constraint firstAttribute="height" constant="106" id="pp9-zM-66e"/>
                                                 </constraints>
                                             </view>
@@ -120,13 +122,13 @@
                                                 <rect key="frame" x="191.5" y="4" width="175.5" height="106"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROGRAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-oP-6H8">
-                                                        <rect key="frame" x="46.5" y="81" width="82.5" height="21"/>
+                                                        <rect key="frame" x="46.5" y="86" width="82.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_handshake" translatesAutoresizingMaskIntoConstraints="NO" id="fUL-QN-b1g">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="80"/>
+                                                        <rect key="frame" x="0.0" y="2" width="175.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="Bsu-Wh-AtC"/>
                                                         </constraints>
@@ -135,10 +137,10 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="106" id="Dem-61-hCA"/>
-                                                    <constraint firstItem="Kge-oP-6H8" firstAttribute="top" secondItem="fUL-QN-b1g" secondAttribute="bottom" constant="1" id="Fnj-0y-ezw"/>
+                                                    <constraint firstItem="Kge-oP-6H8" firstAttribute="top" secondItem="fUL-QN-b1g" secondAttribute="bottom" constant="4" id="Fnj-0y-ezw"/>
                                                     <constraint firstAttribute="trailing" secondItem="fUL-QN-b1g" secondAttribute="trailing" id="H64-sq-zVD"/>
                                                     <constraint firstItem="fUL-QN-b1g" firstAttribute="leading" secondItem="R30-BD-bG6" secondAttribute="leading" id="Q9H-Mb-W9e"/>
-                                                    <constraint firstItem="fUL-QN-b1g" firstAttribute="top" secondItem="R30-BD-bG6" secondAttribute="top" id="bDR-e5-zeZ"/>
+                                                    <constraint firstItem="fUL-QN-b1g" firstAttribute="top" secondItem="R30-BD-bG6" secondAttribute="top" constant="2" id="bDR-e5-zeZ"/>
                                                     <constraint firstItem="Kge-oP-6H8" firstAttribute="centerX" secondItem="R30-BD-bG6" secondAttribute="centerX" id="kFF-Z7-1tE"/>
                                                 </constraints>
                                             </view>
@@ -255,6 +257,9 @@
                         <viewLayoutGuide key="safeArea" id="Bgd-QT-ewV"/>
                     </view>
                     <size key="freeformSize" width="375" height="810"/>
+                    <connections>
+                        <outlet property="aboutUsView" destination="iJL-vb-f4q" id="Ojq-rw-qAb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yia-vr-78S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,8 +267,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fb_checkin" width="360" height="405.1199951171875"/>
-        <image name="fb_page" width="375" height="422.25"/>
+        <image name="fb_checkin" width="750" height="844"/>
+        <image name="fb_page" width="500" height="563"/>
         <image name="ic_aboutus" width="512" height="512"/>
         <image name="ic_contactus" width="512" height="512"/>
         <image name="ic_gallery" width="512" height="512"/>

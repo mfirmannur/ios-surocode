@@ -34,6 +34,8 @@
 		E449F65220F1EB0800C67C0E /* iqroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E449F65120F1EB0800C67C0E /* iqroTests.swift */; };
 		E44A61FC20F2013000F71F6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A61FB20F2013000F71F6B /* HomeViewController.swift */; };
 		E48039BD20F20D6E00BD9634 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48039BB20F20D6E00BD9634 /* Home.storyboard */; };
+		E4AC476C21718F2A00770780 /* Webview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC476A21718F2A00770780 /* Webview.storyboard */; };
+		E4AC476E21718F6A00770780 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC476D21718F6A00770780 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		E449F65320F1EB0800C67C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E44A61FB20F2013000F71F6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E48039BC20F20D6E00BD9634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		E4AC476B21718F2A00770780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Webview.storyboard; sourceTree = "<group>"; };
+		E4AC476D21718F6A00770780 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FE92892EEEC8204C2643EE79 /* Pods-iqroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iqroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iqroTests/Pods-iqroTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,6 +270,7 @@
 				840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */,
 				65B77B9A211BE66600F278BB /* BookingViewController.swift */,
 				65B77B9C211BE68800F278BB /* DonateViewController.swift */,
+				E4AC476D21718F6A00770780 /* WebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				E48039BB20F20D6E00BD9634 /* Home.storyboard */,
 				65B77B92211BE49300F278BB /* Donate.storyboard */,
 				65B77B94211BE52800F278BB /* Booking.storyboard */,
+				E4AC476A21718F2A00770780 /* Webview.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				C3AC0FB92130F118003380E4 /* HeaderView.xib in Resources */,
 				E48039BD20F20D6E00BD9634 /* Home.storyboard in Resources */,
 				E449F64720F1EB0800C67C0E /* LaunchScreen.storyboard in Resources */,
+				E4AC476C21718F2A00770780 /* Webview.storyboard in Resources */,
 				65B77B93211BE49300F278BB /* Donate.storyboard in Resources */,
 				65B77BA3211C01DC00F278BB /* DonateOptionsCell.xib in Resources */,
 				E449F64420F1EB0800C67C0E /* Assets.xcassets in Resources */,
@@ -463,6 +470,7 @@
 				E44A61FC20F2013000F71F6B /* HomeViewController.swift in Sources */,
 				840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */,
 				840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */,
+				E4AC476E21718F6A00770780 /* WebViewController.swift in Sources */,
 				C3AC0FB4212FEFBA003380E4 /* UIColorExtension.swift in Sources */,
 				C3AC0FB72130F0D2003380E4 /* HeaderView.swift in Sources */,
 			);
@@ -509,6 +517,14 @@
 				E48039BC20F20D6E00BD9634 /* Base */,
 			);
 			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		E4AC476A21718F2A00770780 /* Webview.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4AC476B21718F2A00770780 /* Base */,
+			);
+			name = Webview.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

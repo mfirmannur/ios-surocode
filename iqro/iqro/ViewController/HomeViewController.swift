@@ -10,11 +10,26 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var aboutUsView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let aboutUsTap = UITapGestureRecognizer(target: self, action: #selector(self.aboutUsClicked))
+        self.aboutUsView.addGestureRecognizer(aboutUsTap)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    @objc func aboutUsClicked() {
+        let webViewPage = UIStoryboard(name: "Webview", bundle: nil).instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        webViewPage?.webUrl = "http://www.iqro.org.au/history/"
+        webViewPage?.pageTitle = "About Us"
+        navigationController?.pushViewController(webViewPage!, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
