@@ -28,27 +28,69 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-Om-gTH">
                                 <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_front_building" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-xD-PqN">
-                                        <rect key="frame" x="30" y="10" width="315" height="150"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3v-sO-2FI">
+                                        <rect key="frame" x="10" y="5" width="355" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book FRONT Building Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4d-RZ-h8f">
+                                                <rect key="frame" x="149" y="51" width="166" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mosque_front" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-Qp-TLO">
+                                                <rect key="frame" x="49" y="35" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="8f2-Sq-WTl"/>
+                                                    <constraint firstAttribute="width" constant="80" id="oGX-QH-cuA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="ywH-PW-iH0"/>
+                                            <constraint firstItem="g4d-RZ-h8f" firstAttribute="leading" secondItem="Mh3-Qp-TLO" secondAttribute="trailing" constant="20" id="4tx-Kg-oeN"/>
+                                            <constraint firstAttribute="trailing" secondItem="g4d-RZ-h8f" secondAttribute="trailing" constant="40" id="Y06-FW-7Pe"/>
+                                            <constraint firstItem="Mh3-Qp-TLO" firstAttribute="leading" secondItem="C3v-sO-2FI" secondAttribute="leading" constant="49" id="bSN-MH-OIa"/>
+                                            <constraint firstItem="g4d-RZ-h8f" firstAttribute="centerY" secondItem="C3v-sO-2FI" secondAttribute="centerY" id="c3v-mz-hLV"/>
+                                            <constraint firstItem="Mh3-Qp-TLO" firstAttribute="centerY" secondItem="C3v-sO-2FI" secondAttribute="centerY" id="cNE-p0-Pbm"/>
+                                            <constraint firstAttribute="height" constant="150" id="g9B-1d-W2A"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_rear_building" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-3D-ONj">
-                                        <rect key="frame" x="30" y="180" width="315" height="150"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrf-nw-EW2">
+                                        <rect key="frame" x="10" y="165" width="355" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book REAR Building Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-MQ-AN3">
+                                                <rect key="frame" x="153" y="51" width="162" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mosque_rear" translatesAutoresizingMaskIntoConstraints="NO" id="EYy-LY-Q11">
+                                                <rect key="frame" x="49" y="35" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="SXh-bI-D4d"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ptS-rm-WMW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="L8L-6o-qSD"/>
+                                            <constraint firstAttribute="trailing" secondItem="PDC-MQ-AN3" secondAttribute="trailing" constant="40" id="5Ld-5c-adG"/>
+                                            <constraint firstItem="PDC-MQ-AN3" firstAttribute="centerY" secondItem="nrf-nw-EW2" secondAttribute="centerY" id="rld-ow-Bae"/>
+                                            <constraint firstItem="EYy-LY-Q11" firstAttribute="centerY" secondItem="nrf-nw-EW2" secondAttribute="centerY" id="yaP-y9-Pb0"/>
+                                            <constraint firstItem="PDC-MQ-AN3" firstAttribute="leading" secondItem="EYy-LY-Q11" secondAttribute="trailing" constant="24" id="yq9-Ds-9iI"/>
+                                            <constraint firstItem="EYy-LY-Q11" firstAttribute="leading" secondItem="nrf-nw-EW2" secondAttribute="leading" constant="49" id="ztC-Vn-O1h"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8901960784313725" green="0.9137254901960784" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="lJh-xD-PqN" firstAttribute="leading" secondItem="aHX-Om-gTH" secondAttribute="leading" constant="30" id="2Vq-3w-JWE"/>
-                                    <constraint firstAttribute="trailing" secondItem="lJh-xD-PqN" secondAttribute="trailing" constant="30" id="Mzf-6x-bdM"/>
-                                    <constraint firstItem="K5c-3D-ONj" firstAttribute="top" secondItem="lJh-xD-PqN" secondAttribute="bottom" constant="20" id="Tf9-pv-220"/>
-                                    <constraint firstAttribute="trailing" secondItem="K5c-3D-ONj" secondAttribute="trailing" constant="30" id="oyF-fl-pLD"/>
-                                    <constraint firstItem="K5c-3D-ONj" firstAttribute="leading" secondItem="aHX-Om-gTH" secondAttribute="leading" constant="30" id="qdz-Gi-mlV"/>
-                                    <constraint firstItem="lJh-xD-PqN" firstAttribute="top" secondItem="aHX-Om-gTH" secondAttribute="top" constant="10" id="qhi-Ri-uOH"/>
+                                    <constraint firstItem="nrf-nw-EW2" firstAttribute="height" secondItem="C3v-sO-2FI" secondAttribute="height" id="4dE-5N-rMe"/>
+                                    <constraint firstItem="C3v-sO-2FI" firstAttribute="leading" secondItem="aHX-Om-gTH" secondAttribute="leading" constant="10" id="U3v-eR-gfJ"/>
+                                    <constraint firstItem="nrf-nw-EW2" firstAttribute="trailing" secondItem="C3v-sO-2FI" secondAttribute="trailing" id="VWM-uD-tef"/>
+                                    <constraint firstItem="C3v-sO-2FI" firstAttribute="top" secondItem="aHX-Om-gTH" secondAttribute="top" constant="5" id="fB5-Re-zMV"/>
+                                    <constraint firstItem="nrf-nw-EW2" firstAttribute="top" secondItem="C3v-sO-2FI" secondAttribute="bottom" constant="10" id="nNw-xs-HeC"/>
+                                    <constraint firstItem="nrf-nw-EW2" firstAttribute="leading" secondItem="C3v-sO-2FI" secondAttribute="leading" id="vO0-nb-XP8"/>
+                                    <constraint firstAttribute="trailing" secondItem="C3v-sO-2FI" secondAttribute="trailing" constant="10" id="wbq-iA-Fwc"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -64,6 +106,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="boe-Ol-dNP"/>
                     </view>
+                    <connections>
+                        <outlet property="bookFrontView" destination="C3v-sO-2FI" id="UTM-15-49j"/>
+                        <outlet property="bookRearView" destination="nrf-nw-EW2" id="y6t-2n-HnU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hle-qT-yBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +117,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book_front_building" width="750" height="322"/>
-        <image name="book_rear_building" width="750" height="323"/>
+        <image name="ic_mosque_front" width="512" height="512"/>
+        <image name="ic_mosque_rear" width="512" height="512"/>
     </resources>
 </document>
