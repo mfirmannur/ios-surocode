@@ -19,15 +19,15 @@ class WebViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = true
         navigationItem.title = pageTitle
         if let urlString = webUrl, let requestUrl = URL(string: urlString) {
             webView.loadRequest(URLRequest(url: requestUrl))
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
 }
 
