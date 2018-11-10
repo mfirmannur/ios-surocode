@@ -18,10 +18,15 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.donateTableView.delegate = self
         self.donateTableView.dataSource = self
         self.donateTableView.rowHeight = UITableViewAutomaticDimension
+        self.donateTableView.backgroundColor = UIColor(hexString: "#DCDCDC")
         // Do any additional setup after loading the view.
         
         self.navigationController?.navigationBar.isHidden = true
         registerCell()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     func registerCell(){
@@ -33,6 +38,13 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let donateFooterNibName = UINib(nibName: "DonateFooterViewCell", bundle: nil)
         donateTableView.register(donateFooterNibName, forCellReuseIdentifier: "DonateFooterViewCell")
+    }
+    
+    func gotoWebView(url: String) {
+        let webViewPage = UIStoryboard(name: "Webview", bundle: nil).instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        webViewPage?.webUrl = url
+        webViewPage?.pageTitle = "Donate"
+        navigationController?.pushViewController(webViewPage!, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,6 +70,27 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return donateViewSections.count
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(hexString: "#DCDCDC")
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch donateViewSections[indexPath.section] {
+        case "Iqro Perth":
+            gotoWebView(url: "https://secure.squarespace.com/checkout/donate?donatePageId=5b18f1552b6a28f91fae28eb")
+        case "Iqro Upgrade":
+            gotoWebView(url: "https://secure.squarespace.com/checkout/donate?donatePageId=5531e6fde4b0ed810ce0c068")
+        case "Iqro Foundation":
+            gotoWebView(url: "https://secure.squarespace.com/checkout/donate?donatePageId=5531eaa0e4b0c604b971cb3c")
+        case "Infaq":
+            gotoWebView(url: "https://secure.squarespace.com/checkout/donate?donatePageId=5531ea31e4b097f3080551b5")
+        case "Emergency Fund":
+            gotoWebView(url: "https://secure.squarespace.com/checkout/donate?donatePageId=553350b8e4b003aefe3f574e")
+        default:
+            break
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

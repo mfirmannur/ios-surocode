@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Bzx-Yu-rWY" firstAttribute="top" secondItem="r06-DV-SGG" secondAttribute="top" constant="20" id="BKI-r4-HRK"/>
                             <constraint firstItem="Bzx-Yu-rWY" firstAttribute="leading" secondItem="r06-DV-SGG" secondAttribute="leading" constant="20" id="EUo-h6-d60"/>
@@ -39,6 +39,8 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="r06-DV-SGG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6lT-N9-51K"/>
                     <constraint firstItem="r06-DV-SGG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SRa-Nu-SBP"/>
@@ -49,6 +51,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="donateTitle" destination="Bzx-Yu-rWY" id="zjv-Fb-ue9"/>
+                <outlet property="donateTitleContentView" destination="H2p-sc-9uM" id="DK5-Pe-BDW"/>
             </connections>
             <point key="canvasLocation" x="34" y="67.5"/>
         </tableViewCell>

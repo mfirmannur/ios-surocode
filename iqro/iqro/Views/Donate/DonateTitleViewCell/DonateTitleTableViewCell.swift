@@ -10,10 +10,10 @@ import UIKit
 
 class DonateTitleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var donateTitleContentView: UIView!
     @IBOutlet weak var donateTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         donateTitle.text = "Donate Now. Choose Your Cause."
     }
 

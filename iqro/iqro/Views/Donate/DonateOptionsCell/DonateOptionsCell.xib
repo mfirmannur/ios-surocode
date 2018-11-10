@@ -12,39 +12,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DonateOptionsCell" rowHeight="283" id="KGk-i7-Jjw" customClass="DonateOptionsCell" customModule="iqro" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DonateOptionsCell" rowHeight="294" id="KGk-i7-Jjw" customClass="DonateOptionsCell" customModule="iqro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="500" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="500" height="85.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_moon" translatesAutoresizingMaskIntoConstraints="NO" id="fVt-Lg-oqy">
-                        <rect key="frame" x="10" y="10.5" width="70" height="80"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TY-qX-PZl">
+                        <rect key="frame" x="5" y="0.0" width="490" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IQRO CENTER PERTH PROJECT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="hEm-4P-SZj">
+                                <rect key="frame" x="75" y="5" width="410" height="70"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_moon" translatesAutoresizingMaskIntoConstraints="NO" id="fVt-Lg-oqy">
+                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YB8-Uy-Ikk"/>
+                                    <constraint firstAttribute="width" constant="50" id="aDp-6p-5ow"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="a16-qj-PdU"/>
-                            <constraint firstAttribute="height" constant="80" id="ezY-yq-KnD"/>
+                            <constraint firstItem="fVt-Lg-oqy" firstAttribute="centerY" secondItem="7TY-qX-PZl" secondAttribute="centerY" id="0p2-Ht-fDf"/>
+                            <constraint firstAttribute="bottom" secondItem="hEm-4P-SZj" secondAttribute="bottom" constant="5" id="Nxq-zh-WpD"/>
+                            <constraint firstItem="hEm-4P-SZj" firstAttribute="leading" secondItem="fVt-Lg-oqy" secondAttribute="trailing" constant="10" id="OOa-eW-Pw8"/>
+                            <constraint firstItem="fVt-Lg-oqy" firstAttribute="leading" secondItem="7TY-qX-PZl" secondAttribute="leading" constant="15" id="RwF-fg-I43"/>
+                            <constraint firstAttribute="trailing" secondItem="hEm-4P-SZj" secondAttribute="trailing" constant="5" id="Tt2-QB-8N8"/>
+                            <constraint firstAttribute="height" constant="80" id="alL-gI-kiD"/>
+                            <constraint firstItem="hEm-4P-SZj" firstAttribute="top" secondItem="7TY-qX-PZl" secondAttribute="top" constant="5" id="vSa-Z4-htu"/>
                         </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IQRO CENTER PERTH PROJECT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="hEm-4P-SZj">
-                        <rect key="frame" x="100" y="5.5" width="390" height="90"/>
-                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="hEm-4P-SZj" firstAttribute="leading" secondItem="fVt-Lg-oqy" secondAttribute="trailing" constant="20" id="0Sm-mN-MYE"/>
-                    <constraint firstItem="hEm-4P-SZj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="6gE-EH-Idt"/>
-                    <constraint firstAttribute="trailing" secondItem="hEm-4P-SZj" secondAttribute="trailing" constant="10" id="Cbi-Ar-x4A"/>
-                    <constraint firstItem="fVt-Lg-oqy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DRR-my-cIT"/>
-                    <constraint firstAttribute="bottom" secondItem="fVt-Lg-oqy" secondAttribute="bottom" constant="9" id="Ngk-KR-fbO"/>
-                    <constraint firstItem="fVt-Lg-oqy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RIY-xW-nK8"/>
-                    <constraint firstItem="hEm-4P-SZj" firstAttribute="centerY" secondItem="fVt-Lg-oqy" secondAttribute="centerY" id="Rvl-Xq-InB"/>
-                    <constraint firstAttribute="bottom" secondItem="hEm-4P-SZj" secondAttribute="bottom" constant="5" id="cDf-fL-afB"/>
-                    <constraint firstItem="fVt-Lg-oqy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ohl-pI-Srt"/>
+                    <constraint firstAttribute="bottom" secondItem="7TY-qX-PZl" secondAttribute="bottom" constant="5" id="0a1-Yc-A3Q"/>
+                    <constraint firstAttribute="trailing" secondItem="7TY-qX-PZl" secondAttribute="trailing" constant="5" id="5o7-ZY-qZq"/>
+                    <constraint firstItem="7TY-qX-PZl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="KAt-Ge-cMy"/>
+                    <constraint firstItem="7TY-qX-PZl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="O0R-8T-oP5"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -53,7 +63,7 @@
                 <outlet property="donateListImage" destination="fVt-Lg-oqy" id="MVJ-SP-4cM"/>
                 <outlet property="donateListTitle" destination="hEm-4P-SZj" id="B8t-FJ-ZCA"/>
             </connections>
-            <point key="canvasLocation" x="35" y="24.5"/>
+            <point key="canvasLocation" x="33.600000000000001" y="29.23538230884558"/>
         </tableViewCell>
     </objects>
     <resources>
