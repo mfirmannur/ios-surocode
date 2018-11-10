@@ -19,8 +19,6 @@
 		65B77B9D211BE68800F278BB /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77B9C211BE68800F278BB /* DonateViewController.swift */; };
 		65B77BA2211C01DC00F278BB /* DonateOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77BA0211C01DC00F278BB /* DonateOptionsCell.swift */; };
 		65B77BA3211C01DC00F278BB /* DonateOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */; };
-		65B77BA8211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */; };
-		65B77BA9211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */; };
 		840A3B3F20F2071700B32D5B /* Updates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840A3B3D20F2071700B32D5B /* Updates.storyboard */; };
 		840A3B4120F207EB00B32D5B /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */; };
 		840A3B4520F2100000B32D5B /* UpdatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A3B4420F2100000B32D5B /* UpdatesTableViewCell.swift */; };
@@ -59,8 +57,6 @@
 		65B77B9C211BE68800F278BB /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		65B77BA0211C01DC00F278BB /* DonateOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateOptionsCell.swift; sourceTree = "<group>"; };
 		65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateOptionsCell.xib; sourceTree = "<group>"; };
-		65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateOptionsItemCellCollectionViewCell.swift; sourceTree = "<group>"; };
-		65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateOptionsItemCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		6A8143D28379CE79E4E55843 /* Pods_iqro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iqro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840A3B3E20F2071700B32D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = iqro/Base.lproj/Updates.storyboard; sourceTree = SOURCE_ROOT; };
 		840A3B4020F207EB00B32D5B /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +138,6 @@
 			children = (
 				65B6C6A02121822E002D2177 /* DonateFooterInfoViewCell */,
 				65B6C699212177E1002D2177 /* DonateTitleViewCell */,
-				65B77BA5211C026600F278BB /* DonateOptionsItemCell */,
 				65B77BA4211C01EB00F278BB /* DonateOptionsCell */,
 			);
 			path = Donate;
@@ -172,15 +167,6 @@
 				65B77BA1211C01DC00F278BB /* DonateOptionsCell.xib */,
 			);
 			path = DonateOptionsCell;
-			sourceTree = "<group>";
-		};
-		65B77BA5211C026600F278BB /* DonateOptionsItemCell */ = {
-			isa = PBXGroup;
-			children = (
-				65B77BA6211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift */,
-				65B77BA7211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib */,
-			);
-			path = DonateOptionsItemCell;
 			sourceTree = "<group>";
 		};
 		840A3B4220F20EDF00B32D5B /* Views */ = {
@@ -375,7 +361,6 @@
 			files = (
 				65B6C6A4212182A3002D2177 /* DonateFooterViewCell.xib in Resources */,
 				65B77B95211BE52800F278BB /* Booking.storyboard in Resources */,
-				65B77BA9211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.xib in Resources */,
 				C3AC0FB92130F118003380E4 /* HeaderView.xib in Resources */,
 				E48039BD20F20D6E00BD9634 /* Home.storyboard in Resources */,
 				E449F64720F1EB0800C67C0E /* LaunchScreen.storyboard in Resources */,
@@ -461,7 +446,6 @@
 			files = (
 				65B77B9B211BE66600F278BB /* BookingViewController.swift in Sources */,
 				65B77BA2211C01DC00F278BB /* DonateOptionsCell.swift in Sources */,
-				65B77BA8211C029500F278BB /* DonateOptionsItemCellCollectionViewCell.swift in Sources */,
 				65B77B9D211BE68800F278BB /* DonateViewController.swift in Sources */,
 				E449F63A20F1EB0800C67C0E /* AppDelegate.swift in Sources */,
 				65B6C69C21217822002D2177 /* DonateTitleTableViewCell.swift in Sources */,

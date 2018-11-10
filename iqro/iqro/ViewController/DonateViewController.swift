@@ -11,7 +11,7 @@ import UIKit
 class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var donateTableView: UITableView!
-    let donateViewSections = ["Donate Title Section","Donate Option Collection","Donate Footer 1","Donate Footer 2"]
+    let donateViewSections = ["Donate Title Section", "Iqro Perth", "Iqro Upgrade", "Iqro Foundation", "Infaq", "Emergency Fund", "Donate Footer 1","Donate Footer 2"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +39,27 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 1
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return donateViewSections.count
+    func renderDonateOptionCell(image: String, title: String, tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DonateOptionsCell", for: indexPath as IndexPath) as! DonateOptionsCell
+        cell.donateListTitle.text = title
+        cell.donateListImage.image = UIImage(named: image)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch donateViewSections[indexPath.section] {
-        case "Donate Option Collection":
-            return 620;
+        case "Iqro Perth", "Iqro Upgrade":
+            return 80;
         default:
             return UITableViewAutomaticDimension
         }
     }
+
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return donateViewSections.count
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:UITableViewCell?
         
@@ -59,9 +67,16 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case "Donate Title Section":
             cell = tableView.dequeueReusableCell(withIdentifier: "DonateTitleTableViewCell", for: indexPath as IndexPath) as! DonateTitleTableViewCell
             return cell!
-        case "Donate Option Collection":
-            cell = tableView.dequeueReusableCell(withIdentifier: "DonateOptionsCell", for: indexPath as IndexPath) as! DonateOptionsCell
-            return cell!
+        case "Iqro Perth":
+            return renderDonateOptionCell(image: "ic_moon", title: "IQRO CENTER PERTH PROJECT", tableView: tableView, indexPath: indexPath)
+        case "Iqro Upgrade":
+            return renderDonateOptionCell(image: "ic_mosque", title: "MASJID IQRO UPGRADE PROJECT", tableView: tableView, indexPath: indexPath)
+        case "Iqro Foundation":
+            return renderDonateOptionCell(image: "ic_coins", title: "IQRO FOUNDATION FUND", tableView: tableView, indexPath: indexPath)
+        case "Infaq":
+            return renderDonateOptionCell(image: "ic_gift", title: "INFAQ / SHODAQOH", tableView: tableView, indexPath: indexPath)
+        case "Emergency Fund":
+            return renderDonateOptionCell(image: "ic_emergency", title: "EMERGENCY FUND", tableView: tableView, indexPath: indexPath)
         case "Donate Footer 1":
             cell = tableView.dequeueReusableCell(withIdentifier: "DonateFooterViewCell", for: indexPath as IndexPath) as! DonateFooterViewCell
             (cell as! DonateFooterViewCell).donateFooterTitle.isHidden = false
