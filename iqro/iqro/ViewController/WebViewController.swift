@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WebViewController: UIViewController {
+class WebViewController: BaseViewController {
 
     @IBOutlet weak var webView: UIWebView!
     var pageTitle = ""
@@ -22,6 +22,8 @@ class WebViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = true
         navigationItem.title = pageTitle
         if let urlString = webUrl, let requestUrl = URL(string: urlString) {
+            showSpinnerWithMask(true)
+            webView.isHidden = true
             webView.loadRequest(URLRequest(url: requestUrl))
         }
     }
@@ -38,5 +40,13 @@ extension WebViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         print("finish")
+        webView.stringByEvaluatingJavaScript(from: "document.getElementById('mobileMenuLink').style.display = 'none'; document.getElementById('header').style.display = 'none'")
+        webView.stringByEvaluatingJavaScript(from: "document.getElementsByClassName('top-divider')[0].style.display = 'none'")
+        webView.stringByEvaluatingJavaScript(from: "document.getElementsByClassName('PageHeader-content-KtUd-')[0].style.display = 'none'")
+        webView.stringByEvaluatingJavaScript(from: "document.getElementsByClassName('header')[0].style.display = 'none'")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.showSpinnerWithMask(false)
+            webView.isHidden = false
+        }
     }
 }

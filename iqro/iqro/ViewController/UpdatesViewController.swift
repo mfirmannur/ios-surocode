@@ -9,7 +9,7 @@
 import UIKit
 import SwiftSoup
 
-class UpdatesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class UpdatesViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var updatesTableView: UITableView!
     
@@ -30,9 +30,11 @@ class UpdatesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func webServiceCall() {
+        showSpinnerWithMask(true)
         let url = URL(string: "http://www.iqro.org.au/latestupdate/")!
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             self.parseHtmlString(html: String(data: data ?? Data(), encoding: .utf8)!)
+            self.showSpinnerWithMask(false)
         }
         task.resume()
     }
